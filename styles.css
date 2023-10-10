@@ -1,0 +1,393 @@
+header{
+    height: 134px;
+    background-color: #EDF2EC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-family: Inika;
+}
+
+.logo img {
+    margin-right: 10px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1220px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+}
+
+#home{
+    color:#E06733;
+
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav li{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-family: Inika;
+}
+
+
+/*------welcome */
+
+.bg-welcome{
+    background-color: #EDF2EC;
+}
+
+.wrapper{
+    max-width: 1222px;
+    margin: 0 auto;
+}
+
+.welcome-01{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 96px;
+    padding-bottom: 30px;
+}
+
+.welcome-2 {
+    max-width: 549px;
+}
+
+.welcome-2 h1 {
+    font-size: 45px;
+    line-height: 50px;
+    color:#717171;
+    font-family: Inter;
+}
+
+.welcome-2 span {
+    color: #499A18;
+}
+
+.welcome-2 p {
+    color:#636060;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    padding-bottom: 30px;
+}
+
+.welcome-2 button {
+    border: 2px solid orange;
+    border-radius: 10px;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-family: Inter;
+    line-height: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+.welcome-2 button:hover {
+    background-color: #E06733;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+/*----------------about */
+
+.about-wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 153px;
+    padding-top: 140px;
+    padding-bottom: 46px;
+}
+
+.about1{
+    max-width: 605px;
+}
+
+.about1 h2{
+    font-family: Inika;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+    padding-right: 50px;
+}
+
+.about1 span{
+    color:#E06733;
+}
+
+.about1 p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #636060;
+}
+
+/*-----------service*/
+
+.bg-service{
+    background-color: #EDF2EC;
+}
+
+.services_1 {
+    display: flex;
+    gap: 112px;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.service h1 {
+    font-family: 'Inika', serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 52px;
+    color: #499A18;
+    max-width: 300px;
+}
+
+.service_1_ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.service_button {
+
+    width: 160px;
+    height: 50px;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    background-color: #EDF2EC;
+
+    font-family: 'Inika', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #E06733;
+}
+
+.service_button:hover {
+    background-color: #E06733;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.service_button:active {
+    background-color: #E06733;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.service_2 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #EDF2EC;
+    gap: 50px 116px;
+    padding-top: 50px;
+    padding-bottom: 110px;
+}
+
+.service_2_text h3{
+    color:#E06733;
+    font-family: Inter;
+}
+
+.service_2_text p{
+    color:#717171;
+    font-family: Inter;
+}
+
+/*---------------------price*/
+
+.price__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 100px;
+}
+
+.prices_1 h2 {
+    font-family: Inter;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000000;
+}
+
+.prices_2 h2 {
+    font-family: Inter;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: right;
+    color: #000000;
+}
+
+.prices_2 span {
+    color: #499A18;
+}
+
+.prices_2_button {
+    margin-top: 38px;
+    margin-bottom: 39px;
+    text-align: right;
+}
+
+.prices_2 button {
+    font-family: Inika;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #E06733;
+    padding: 12px 33px;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.prices_2 button:hover {
+    background-color: #E06733;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.prices_2 img {
+    float: right;
+    width: 152px;
+    height: 174.99px;
+}
+
+/*---------------------contact us*/
+
+.contacts {
+    background-color: #EDF2EC;
+}
+
+.contacts__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 110px;
+    padding-top: 50px;
+}
+
+.contacts_2_h3 {
+    font-family: Inika;
+    font-size: 34px;
+    color: #499A18;
+}
+
+.accordion{
+    padding-left: 250px;
+}
+
+.accordion-button {
+    width: 450px; /* Задайте желаемую ширину */
+    height: 50px;
+    padding-left: 20px; /* Отодвигаем текст от правого края кнопки */
+    background: #D6E7D2;
+    font-family: Inter;
+    font-size: 20px;
+    color: #717171;
+    border: none;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: left;
+}
+
+.accordion-button:hover,
+.active {
+    background-color: #ccc;
+}
+
+.accordion-panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+/*------------------footer*/
+
+footer {
+    background-color: white;
+    padding: 20px 0;
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.year {
+    font-family: Inter;
+    font-size: 16px;
+}
+
+.year a {
+    text-decoration: none;
+    color: #000;
+}
+
+.rss {
+    font-family: Inter;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    flex-grow: 1;
+    color:black;
+}
+
+.rss a {
+    text-decoration: none;
+    color: #000;
+}
+
+.svg_group {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.svg_group li {
+    font-family: Inter;
+}
+
+.svg {
+    width: 32px;
+    height: 32px;
+}
+
+
+
+
