@@ -1,24 +1,16 @@
-header{
+html{
+    scroll-behavior: smooth;
+}
+
+.header {
     height: 134px;
     background-color: #EDF2EC;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
 }
 
-.logo{
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-    font-family: Inika;
-}
-
-.logo img {
-    margin-right: 10px;
-}
-
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,47 +19,56 @@ header{
     margin: 0 auto;
 }
 
-.nav{
+.logo {
     display: flex;
     align-items: center;
-    margin-left: 0;
+    font-size: 16px;
+    font-family: Inika;
 }
 
-#home{
-    color:#E06733;
-
+.logo__image {
+    margin-right: 10px;
 }
 
-.nav ul {
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav__list {
     list-style-type: none;
     display: flex;
 }
 
-.nav li{
+.nav__item {
     display: inline-block;
     margin-right: 30px;
 }
 
-.nav a {
+.nav__link {
     text-decoration: none;
     color: #000;
     font-size: 16px;
     font-family: Inika;
 }
 
+#home.nav__link {
+    color: #E06733;
+}
 
 /*------welcome */
 
-.bg-welcome{
+
+.welcome1 .bg-welcome {
     background-color: #EDF2EC;
 }
 
-.wrapper{
+.wrapper {
     max-width: 1222px;
     margin: 0 auto;
 }
 
-.welcome-01{
+.welcome1 .welcome1__content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -75,23 +76,23 @@ header{
     padding-bottom: 30px;
 }
 
-.welcome-2 {
+.welcome1 .welcome1__text {
     max-width: 549px;
 }
 
-.welcome-2 h1 {
+.welcome1 .welcome1__text h1 {
     font-size: 45px;
     line-height: 50px;
-    color:#717171;
+    color: #717171;
     font-family: Inter;
 }
 
-.welcome-2 span {
+.welcome1 .welcome1__text span {
     color: #499A18;
 }
 
-.welcome-2 p {
-    color:#636060;
+.welcome1 .welcome1__text p {
+    color: #636060;
     font-family: Inter;
     font-weight: 400;
     font-size: 20px;
@@ -99,7 +100,8 @@ header{
     padding-bottom: 30px;
 }
 
-.welcome-2 button {
+
+.welcome1 .welcome1__text button {
     border: 2px solid orange;
     border-radius: 10px;
     padding: 10px 30px;
@@ -108,9 +110,11 @@ header{
     line-height: 20px;
     color: black;
     cursor: pointer;
+    background-color: transparent;
 }
 
-.welcome-2 button:hover {
+
+.welcome1 .welcome1__text button:hover {
     background-color: #E06733;
     color: white;
     transition: 0.5s;
@@ -119,7 +123,7 @@ header{
 
 /*----------------about */
 
-.about-wrapper{
+.about__content{
     display: flex;
     justify-content: space-between;
     gap: 153px;
@@ -127,11 +131,11 @@ header{
     padding-bottom: 46px;
 }
 
-.about1{
+.about__heading{
     max-width: 605px;
 }
 
-.about1 h2{
+.about__title {
     font-family: Inika;
     font-weight: 400;
     font-size: 40px;
@@ -140,11 +144,12 @@ header{
     padding-right: 50px;
 }
 
-.about1 span{
-    color:#E06733;
+.about__subtitle {
+    color: #E06733;
 }
 
-.about1 p {
+.about__description {
+    max-width: 605px;
     font-family: Inter;
     font-weight: 400;
     font-size: 20px;
@@ -154,18 +159,18 @@ header{
 
 /*-----------service*/
 
-.bg-service{
+.service {
     background-color: #EDF2EC;
 }
 
-.services_1 {
+.service__header {
     display: flex;
     gap: 112px;
     align-items: center;
     padding-top: 10px;
 }
 
-.service h1 {
+.service__title {
     font-family: 'Inika', serif;
     font-size: 40px;
     font-weight: 400;
@@ -174,20 +179,18 @@ header{
     max-width: 300px;
 }
 
-.service_1_ul {
+.service__list {
     display: flex;
     gap: 40px;
     list-style: none;
 }
 
-.service_button {
-
+.service__button {
     width: 160px;
     height: 50px;
     border: 1px solid #E06733;
     border-radius: 5px;
     background-color: #EDF2EC;
-
     font-family: 'Inika', serif;
     font-style: normal;
     font-weight: 400;
@@ -195,22 +198,20 @@ header{
     color: #E06733;
 }
 
-.service_button:hover {
+.service__button:hover {
     background-color: #E06733;
     color: white;
     transition: 0.5s;
     cursor: pointer;
 }
 
-.service_button:active {
+.service__button:active {
     background-color: #E06733;
     color: white;
     cursor: pointer;
 }
 
-
-
-.service_2 {
+.service__cards {
     display: flex;
     flex-wrap: wrap;
     background-color: #EDF2EC;
@@ -219,33 +220,128 @@ header{
     padding-bottom: 110px;
 }
 
-.service_2_text h3{
-    color:#E06733;
+.service__text h3 {
     font-family: Inter;
+    text-align: center;
+    color: #E06733;
 }
 
-.service_2_text p{
-    color:#717171;
+.service__text p {
     font-family: Inter;
+    text-align: center;
+    color: #717171;
+}
+
+.service__text {
+    box-sizing: border-box;
+    border: 1px solid #E3E1D5;
+    border-radius: 0px 0px 20px 20px;
 }
 
 /*---------------------price*/
 
-.price__wrapper {
+.prices__wrapper {
     display: flex;
     justify-content: space-between;
     padding-top: 10px;
     padding-bottom: 100px;
 }
 
-.prices_1 h2 {
+.prices__title {
     font-family: Inter;
     font-size: 40px;
     line-height: 48px;
     color: #000000;
 }
 
-.prices_2 h2 {
+/*-----------------price-form*/
+
+.prices__form {
+    width: 332px;
+    height: 282.01px;
+    border: 1px solid #E3E1D5;
+    border-radius: 20px;
+    transition: height 0.3s;
+}
+
+.price__form-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prices__form-item {
+    background: #EDF2EC;
+    border-radius: 20px;
+    margin-top: 32px;
+    width: 250px;
+    font-family: Inter;
+}
+
+.prices__form-item details[open] summary {
+    background-color: #D6E7D2;
+    border-radius: 20px;
+
+}
+
+.prices__form-item summary {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 16px 0 16px 40px;
+}
+
+.prices__form-item summary img {
+    margin-right: 20px;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.price__form-text{
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 10px;
+    color: #717171;
+    max-width: 169px;
+    margin: 0 auto;
+
+}
+
+.price__form__p{
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+
+.price__form__p2 span{
+    color:#E06733;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.price__form__p2{
+    color:#000;
+    font-size: 12px;
+}
+
+.price__form__button{
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #717171;
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: none;
+}
+
+/*-------------------price-form-end*/
+
+.prices__subtitle {
     font-family: Inter;
     font-size: 40px;
     line-height: 50px;
@@ -253,17 +349,17 @@ header{
     color: #000000;
 }
 
-.prices_2 span {
+.prices__subtitle span {
     color: #499A18;
 }
 
-.prices_2_button {
+.prices__button {
     margin-top: 38px;
     margin-bottom: 39px;
     text-align: right;
 }
 
-.prices_2 button {
+.prices__contact-button {
     font-family: Inika;
     font-weight: 700;
     font-size: 20px;
@@ -275,20 +371,24 @@ header{
     background-color: white;
 }
 
-.prices_2 button:hover {
-    background-color: #E06733;
-    color: white;
+.prices__contact-button:hover {
+    background-color: white;
+    color: #E06733;
     transition: 0.5s;
     cursor: pointer;
 }
 
-.prices_2 img {
-    float: right;
+.price__img{
+    text-align: right;
+}
+
+.prices__content img {
     width: 152px;
     height: 174.99px;
 }
 
 /*---------------------contact us*/
+
 
 .contacts {
     background-color: #EDF2EC;
@@ -301,44 +401,105 @@ header{
     padding-top: 50px;
 }
 
-.contacts_2_h3 {
+.contacts__title {
     font-family: Inika;
     font-size: 34px;
     color: #499A18;
 }
 
-.accordion{
+/*----------------------contacts-form*/
+
+.form__contacts{
     padding-left: 250px;
 }
 
-.accordion-button {
-    width: 450px; /* Задайте желаемую ширину */
+.contacts__form {
+    width: 450px;
     height: 50px;
-    padding-left: 20px; /* Отодвигаем текст от правого края кнопки */
     background: #D6E7D2;
     font-family: Inter;
     font-size: 20px;
     color: #717171;
-    border: none;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    text-align: left;
 }
 
-.accordion-button:hover,
-.active {
-    background-color: #ccc;
+.contacts__form summary{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0px 40px 0px 20px;
 }
 
-.accordion-panel {
-    padding: 0 18px;
-    background-color: white;
-    display: none;
-    overflow: hidden;
+.details[open] summary{
+    background-color:#C1E698;
 }
+
+.contacts__form[open] {
+    height: 284px;
+}
+
+
+
+
+.contacts__form-text {
+    font-family: 'Inter', sans-serif;
+    background-color: #DCE9D9;
+    padding: 10px;
+}
+
+.contacts__form__p1 {
+    color: #717171;
+    font-size: 16px;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.contacts__form__p1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%; /* увеличиваем ширину подчеркивания */
+    height: 1px; /* увеличиваем высоту подчеркивания */
+    background-color: #717171;
+    opacity: 0.5; /* уменьшаем яркость подчеркивания */
+}
+
+.contacts__list {
+    list-style: none;
+    padding: 0;
+}
+
+.li-contacts {
+    margin-bottom: 15px;
+}
+
+.contacts__link {
+    color: #499A18;
+    font-size: 16px;
+    position: relative;
+    text-decoration: none;
+}
+
+.contacts__link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 430px;
+    height: 1px;
+    background-color: #D9D9D9;
+    opacity: 0.5;
+}
+
+
+
+
 
 /*------------------footer*/
 
-footer {
+.footer {
     background-color: white;
     padding: 20px 0;
 }
@@ -349,45 +510,404 @@ footer {
     align-items: center;
 }
 
-.year {
+.footer__year {
     font-family: Inter;
     font-size: 16px;
 }
 
-.year a {
+.footer__year a {
     text-decoration: none;
     color: #000;
 }
 
-.rss {
+.footer__rss {
     font-family: Inter;
     font-size: 18px;
     text-align: center;
     text-decoration: none;
     flex-grow: 1;
-    color:black;
+    color: black;
 }
 
-.rss a {
+.footer__rss a {
     text-decoration: none;
     color: #000;
 }
 
-.svg_group {
+.footer__social-icons {
     list-style: none;
     display: flex;
     gap: 10px;
 }
 
-.svg_group li {
+.footer__social-icons li {
     font-family: Inter;
 }
 
-.svg {
+.footer__svg {
     width: 32px;
     height: 32px;
 }
 
+/*--------------- tablet 768px*/
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 1222px) {
+
+.header {
+    height: 117px;
+}
+
+.navbar {
+    width: 668px;
+
+}
+
+.logo p{
+    font-weight: bold;
+}
+
+.nav__item a{
+    font-weight: bold;
+}
+
+.wrapper{
+    max-width: 668px;
+    padding: 0 50px;
+}
+
+/*----------------welcome*/
+
+.welcome1__content{
+    flex-direction: row-reverse;
+}
+
+.welcome1__image img {
+    width: 280px;
+    height: 254.15px;
+}
+
+.welcome1__text {
+    max-width: 346px;
+}
+
+.welcome1 .welcome1__text h1{
+    font-size: 35px;
+    max-width: 340px;
+}
+.welcome1 .welcome1__text p{
+    font-size: 16px;
+    max-width: 340px;
+}
+
+.welcome1__text button{
+    padding: 10px 24px;
+}
+
+/*------------about*/
+
+.about__content{
+    flex-direction: column;
+    padding-top: 20px;
+    gap: 70px;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+.about__title{
+    font-size: 35px;
+}
+
+.about__heading h2{
+    text-align: center;
+}
+
+.about__image img{
+    width: 250px;
+    height: 258px;
+}
+
+/*------------service*/
+
+.service__header{
+    display: table;
+    padding-top: 20px;
+}
+
+.service__title{
+    font-size: 35px;
+}
+
+.service__cards{
+    padding-top: 20px;
+    gap: 45px 60px;
+}
+
+.service__card{
+    max-width: 280px;
+}
 
 
+/*----------------------price*/
+
+.prices__title{
+    font-size: 35px;
+}
+
+.prices__subtitle{
+    font-size: 25px;
+}
+
+
+
+/*----------------------contact*/
+.contacts__wrapper{
+    padding-top: 10px;
+    flex-direction: column-reverse;
+    text-align: center;
+}
+
+.contacts__heading h3{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.form__contacts{
+    align-items:center;
+    padding-left: 80px;
+}
+
+.contacts__image img{
+    padding-top: 150px;
+    max-width: 200px;
+    height: 248.49px;
+}
+
+/*------------footer*/
+
+.footer__wrapper{
+    flex-direction: column;
+}
+
+.footer__year p{
+    font-size: 20px;
+}
+
+.footer__university p{
+    font-size: 20px;
+}
+
+.footer__social-icons{
+    padding-right: 30px;
+}
+
+}
+
+@media screen and (max-width: 767px){
+
+/*------------------------header start*/
+
+.nav{
+    display: none;
+}
+
+
+/*------------------------header end*/
+
+/*------------------------welcome start*/
+
+.welcome1__image{
+    display: none;
+}
+
+.welcome1__content{
+    justify-content: center !important;
+    padding-top: 0 !important;
+}
+
+.welcome1_text{
+    justify-content: center;
+}
+
+.welcome1__text h1{
+    font-size: 25px !important;
+    line-height: 35px !important;
+    font-weight: 700;
+}
+
+.welcome1 .welcome1__text button{
+    font-size: 10px !important;
+    padding: 5px 15px;
+}
+
+/*------------------------welcome end*/
+
+/*------------------------about start*/
+
+.about__title{
+    font-size: 25px;
+    line-height: 32.57px;
+    padding-right: 0;
+}
+
+.about__description{
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.about__image img{
+    width: 150px;
+    height: 147px;
+}
+
+/*------------------------about end*/
+
+/*------------------------service start*/
+
+.service__title{
+    font-size: 25px;
+    line-height: 32.57px;
+}
+
+.service__cards{
+    justify-content: center;
+}
+
+.service__list{
+    justify-content: left;
+    flex-wrap: wrap;
+    padding-left: 0;
+    gap: 10px;
+}
+
+.service__text h3{
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.service__text p{
+    font-size: 16px;
+    line-height: 20px;
+}
+
+/*------------------------service end*/
+
+/*------------------------price start*/
+
+.prices__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.prices__title {
+    font-size: 25px;
+    line-height: 30.26px;
+}
+
+.prices__form {
+    width: 224px;
+}
+
+.price__form-2{
+    padding-top: 40px;
+}
+
+.prices__form-item {
+    width: 180px;
+    height: 49.72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.prices__subtitle {
+    font-size: 20px;
+    text-align: center;
+}
+
+.prices__form-item summary{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+    font-size: 15px;
+    padding: 5px 0 0 0;
+}
+
+.prices__form-item img {
+    margin-right: 10px;
+}
+
+.price__img img{
+    display: none;
+}
+
+.prices__button{
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+
+/*------------------------price end*/
+
+/*------------------------contacts start*/
+
+.contacts__title{
+    font-size: 25px;
+    line-height: 32.57px;
+}
+
+.form__contacts{
+    padding-left: 160px;
+}
+
+
+
+.contacts__form{
+    width: 300px;
+}
+
+.contacts__image img{
+    width: 100px;
+    height: 124.25px;
+}
+
+.contacts__link::after{
+    width: 100px;
+}
+/*------------------------contacts end*/
+
+/*------------------------footer start*/
+
+.footer__year {
+    font-size: 20px;
+    line-height: 24.2px;
+}
+
+.footer__year p{
+    margin: 10px;
+}
+
+.footer__university {
+    font-size: 20px;
+    line-height: 24.2px;
+}
+
+.footer__university p{
+    margin: 0;
+}
+
+/*------------------------footer end*/
+
+}
 
