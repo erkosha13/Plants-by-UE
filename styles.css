@@ -390,9 +390,15 @@ html {
 
 .contacts__wrapper {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 110px;
   padding-top: 50px;
+}
+
+.contacts__info{
+  display: flex;
+  flex-direction: column;
 }
 
 .contacts__title {
@@ -403,9 +409,6 @@ html {
 
 /*----------------------contacts-form*/
 
-.form__contacts {
-  padding-left: 250px;
-}
 
 .contacts__form {
   width: 450px;
@@ -647,6 +650,12 @@ img {
   }
 
   /*----------------------contact*/
+
+  .contacts__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .contacts__wrapper {
     padding-top: 10px;
     flex-direction: column-reverse;
@@ -658,10 +667,7 @@ img {
     padding-bottom: 50px;
   }
 
-  .form__contacts {
-    align-items: center;
-    padding-left: 80px;
-  }
+  
 
   .contacts__image img {
     padding-top: 150px;
@@ -840,13 +846,10 @@ img {
 
   /*------------------------contacts start*/
 
+
   .contacts__title {
     font-size: 25px;
     line-height: 32.57px;
-  }
-
-  .form__contacts {
-    padding-left: 160px;
   }
 
   .contacts__form {
@@ -888,17 +891,9 @@ img {
 
 @media screen and (max-width: 400px) {
 
-  .contacts__info{
-
-  }
-
   .contacts__title {
     font-size: 25px;
     line-height: 32.57px;
-  }
-
-  .form__contacts {
-    padding-left: 0px;
   }
 
   .contacts__form {
